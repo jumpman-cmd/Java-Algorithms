@@ -1,4 +1,4 @@
-class Solution 
+class HasDuplicate 
 {
     public boolean hasDuplicate(int[] nums)
     {
