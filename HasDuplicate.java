@@ -1,25 +1,19 @@
-class HasDuplicate
+class Solution 
 {
-    public boolean hasDuplicate(int[] nums) 
+    public boolean hasDuplicate(int[] nums)
     {
-        boolean duplicate = true;
-        int N = nums.length;
-
-        for(int i = 0; i < N - 1; i++)
+        int n = nums.length;
+        for(int i = 0; i < n; i++)
         {
-            for(int j = i + 1; j < N; j++)
+            for(int j = i + 1; j < n; j++)
             {
-                if(nums[i] == nums[j])
+                if(nums[j] == nums[i])
                 {
-                    duplicate = true;
-                }
-                
-                else
-                {
-                    duplicate = false;
+                    return true;
                 }
             }
         }
-        return duplicate;
+        
+        return false;
     }
 }
