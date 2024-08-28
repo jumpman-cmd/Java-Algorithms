@@ -13,7 +13,7 @@
 * Output: [0,1]
 **/
 
-class twoIntegerSum 
+class TwoIntegerSum 
 {
     public int[] twoSum(int[] nums, int target) 
     {
