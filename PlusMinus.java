@@ -1,4 +1,30 @@
+/*Problem: Plus Minus
+Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero. Print the decimal value of each ratio on a new line with six decimal places.
 
+Function Description
+Complete the function plusMinus in the editor below.
+
+The function plusMinus has the following parameter(s):
+
+int arr[n]: an array of integers
+Print
+Print the following 3 lines, each to 6 decimal places:
+
+The proportion of positive values in the array.
+The proportion of negative values in the array.
+The proportion of zeros in the array.
+
+Input Format
+The first line contains an integer, n, the size of the array. The second line contains n space-separated integers that describe the array arr[n].
+
+Output Format
+Print the following 3 lines, each to 6 decimal places:
+
+The proportion of positive values
+The proportion of negative values
+The proportion of zeros
+
+*/
 
 import java.io.*;
 import java.math.*;
