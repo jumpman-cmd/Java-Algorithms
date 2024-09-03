@@ -1,3 +1,25 @@
+/*Problem: Mini-Max Sum
+Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then, print the respective minimum and maximum values as a single line of two space-separated long integers.
+
+Function Description
+Complete the function miniMaxSum in the editor below.
+
+The function miniMaxSum has the following parameter(s):
+
+int arr[5]: an array of 5 positive integers.
+Print
+Print two space-separated long integers on one line:
+
+The first is the minimum sum of 4 of the 5 integers.
+The second is the maximum sum of 4 of the 5 integers.
+
+Input Format
+A single line of five space-separated integers.
+
+Output Format
+Print two space-separated long integers denoting the respective minimum and maximum values that can be calculated by summing exactly four of the five integers.
+*/
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
