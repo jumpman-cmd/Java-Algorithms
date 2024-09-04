@@ -1,3 +1,25 @@
+/*Problem Statement: Inorder Traversal of a Binary Tree
+Objective
+Given the root node of a binary tree, you need to print the values of the nodes in inorder traversal as a single line of space-separated values.
+
+Inorder Traversal
+Inorder traversal is a depth-first traversal method where nodes are visited in the following order:
+
+Left Subtree: Visit all nodes in the left subtree.
+Root Node: Visit the root node.
+Right Subtree: Visit all nodes in the right subtree.
+
+Input
+root: A Node object representing the root of the binary tree.
+
+Output
+Print the values of the nodes in inorder traversal in a single line of space-separated values.
+
+Constraints
+The tree will contain unique integer values.
+The binary tree is not necessarily balanced.
+*/
+
 import java.util.*;
 import java.io.*;
 
