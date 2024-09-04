@@ -1,3 +1,20 @@
+/*Problem Statement: Lonely Integer
+Given an array of integers, where all elements but one occur twice, find the element that occurs only once.
+
+Function Description:
+Complete the lonelyInteger function in the editor below.
+
+lonelyInteger has the following parameter:
+List<Integer> a: an array of integers
+
+Returns:
+int: the element that occurs only once
+
+Input Format:
+The first line contains a single integer, n, the number of integers in the array.
+The second line contains n space-separated integers that represent the array a.
+*/
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
