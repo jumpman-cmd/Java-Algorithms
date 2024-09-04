@@ -1,3 +1,23 @@
+/*Problem Statement: Diagonal Difference
+Given a square matrix, calculate the absolute difference between the sums of its diagonals.
+
+Function Description:
+Complete the diagonalDifference function in the editor below.
+
+diagonalDifference has the following parameter(s):
+List<List<Integer>> arr: an array of integers representing the matrix.
+
+Returns:
+int: the absolute difference between the sums of the matrix's diagonals.
+
+Input Format:
+The first line contains a single integer, n, the number of rows and columns in the matrix.
+Each of the next n lines describes a row, arr[i], and consists of n space-separated integers.
+
+Output Format:
+Return the absolute difference between the sums of the matrix's two diagonals as a single integer.
+*/
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
