@@ -1,3 +1,14 @@
+/*Problem Statement: Binary Tree Postorder Traversal
+Objective:
+Complete the function postOrder in the editor below, which takes a parameter: a pointer to the root of a binary tree. It must print the values in the tree's postorder traversal as a single line of space-separated values.
+
+Input Format:
+Our test code passes the root node of a binary tree to the postOrder function.
+
+Output Format:
+Print the tree's postorder traversal as a single line of space-separated values.
+*/
+
 import java.util.*;
 import java.io.*;
 
