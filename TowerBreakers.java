@@ -1,4 +1,19 @@
+/*
+Problem Statement: Tower Breakers Game
+Two players are playing a game of Tower Breakers. Player 1 always moves first, and both players play optimally. The rules of the game are as follows:
 
+Initially, there are n towers, and each tower has a height of m.
+On each player's turn, they can choose any tower of height x (where x > 1) and reduce its height to y, where 1 ≤ y < x and x % y == 0 (i.e., the new height must be a divisor of the current height).
+Players alternate turns, and the first player who cannot make a move loses the game.
+Given the number of towers and their initial height, determine which player will win the game. If Player 1 wins, return 1. Otherwise, return 2.
+
+For each test case, return 1 if Player 1 wins or 2 if Player 2 wins.
+
+Constraints:
+Both players play optimally.
+The number of towers n is always greater than or equal to 1.
+The height of each tower m is always greater than or equal to 1.
+*/
 
 import java.io.*;
 import java.math.*;
