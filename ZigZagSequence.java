@@ -1,3 +1,10 @@
+/*
+Problem Statement: Zig Zag Sequence Transformation - debug
+Given an array of distinct integers, your task is to transform the array into a zig zag sequence. A sequence is called a zig zag sequence if the first half of the array is in increasing order and the second half is in decreasing order, where the middle element is considered part of the second half. You need to find the lexicographically smallest zig zag sequence by permuting the elements of the array.
+
+You are allowed to modify at most three lines of the provided function findZigZagSequence to achieve the desired transformation.
+*/
+
 import java.util.*;
 import java.lang.*;
 import java.io.*;
