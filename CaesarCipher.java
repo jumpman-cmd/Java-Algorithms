@@ -1,3 +1,25 @@
+/*
+Problem Statement: Caesar Cipher Encryption
+Julius Caesar used a cipher to encrypt his confidential messages. This cipher shifts each letter in the message by a certain number of positions in the alphabet. If the shift takes a letter past the end of the alphabet, the letter wraps around to the front. For instance, with a rotation factor of 3, the letters w, x, y, and z would map to z, a, b, and c, respectively.
+
+The cipher only encrypts alphabetical characters, while non-alphabetical characters (like punctuation marks and symbols) remain unchanged.
+
+Function Description
+Write the function caesarCipher that takes a string and an integer as inputs and returns the encrypted string using Caesar's cipher.
+
+Parameters:
+string s: The unencrypted string consisting of letters and other characters.
+int k: The number of positions to shift each letter by in the alphabet.
+
+Returns:
+string: The encrypted string.
+
+Input Format
+The first line contains an integer, n, the length of the unencrypted string.
+The second line contains the unencrypted string, s.
+The third line contains k, the number of positions to rotate each letter by.
+*/
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
