@@ -36,7 +36,7 @@ class Result
      {
          // Write your code here
          int maxCandleHeight;
-         // What's the difference between Collections and Collection!
+         // What's the difference between Collections and Collection?
          maxCandleHeight = Collections.max(candles);
          
          int numOfMaxCandles = 0;
