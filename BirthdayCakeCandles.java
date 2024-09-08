@@ -1,3 +1,16 @@
+/*
+Problem Statement: Birthday Cake Candles
+You are tasked with finding out how many of the tallest candles on a birthday cake can be blown out. 
+You will receive an array of integers, where each integer represents the height of a candle. 
+The goal is to determine how many candles are the tallest.
+
+e.g., There are 5 candles with heights 4, 4, 1, 3, 4. The tallest candle has a height of 4, and there are 3 such candles. 
+Therefore, the output is 3.
+
+Task:
+Write a function to solve the problem.
+*/
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
