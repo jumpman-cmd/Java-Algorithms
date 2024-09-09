@@ -1,3 +1,18 @@
+/*
+Problem Statement:
+You are given a list of integers. Your task is to find the minimum absolute difference between any two elements in the list.
+
+Function Signature:
+Complete the function minimumAbsoluteDifference(arr) that takes in a list of integers and returns the smallest absolute difference between any two elements.
+
+Input:
+The first line contains a single integer n (the size of the list).
+The second line contains n space-separated integers representing the elements of the list.
+    
+Output:
+Return a single integer, the minimum absolute difference between any two elements in the list.
+*/
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
