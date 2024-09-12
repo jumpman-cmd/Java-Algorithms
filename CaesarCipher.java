@@ -46,34 +46,34 @@ class Result
      public static String caesarCipher(String s, int k) 
      {
          // Write your code here
-         StringBuilder cipher = new StringBuilder();
+         StringBuilder cCipher = new StringBuilder();
          k = k % 26;
          
-         for(char ch : s.toCharArray())
+         for(char ccCharacters : s.toCharArray())
          {
-             if(Character.isLowerCase(ch))
+             if(Character.isLowerCase(ccCharacters))
              {
-                 char rotatedCh1 = (char) ((ch - 'a' + k) % 26 + 'a');
-                 cipher.append(rotatedCh1);
+                 char cRotation1 = (char) ((ccCharacters - 'a' + k) % 26 + 'a');
+                 cCipher.append(cRotation1);
              }
              
-             else if(Character.isUpperCase(ch))
+             else if(Character.isUpperCase(ccCharacters))
              {
-                 char rotatedCh2 = (char) ((ch - 'A' + k) % 26 + 'A');
-                 cipher.append(rotatedCh2);
+                 char cRotation2 = (char) ((ccCharacters - 'A' + k) % 26 + 'A');
+                 cCipher.append(cRotation2);
              }
              
              else
              {
-                 cipher.append(ch);
+                 cCipher.append(ccCharacters);
              }
          }
          
-         return cipher.toString();
+         return cCipher.toString();
      }
 }
 
-public class CaesarCipher 
+public class Solution 
 {
     public static void main(String[] args) throws IOException 
     {
