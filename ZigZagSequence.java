@@ -38,7 +38,7 @@ public class Main {
             a[st] = a[ed];
             a[ed] = temp;
             st = st + 1;
-            ed = ed - 1; // Also made ed to decrement.
+            ed--; // Also made ed to decrement.
         }
         for(int i = 0; i < n; i++){
             if(i > 0) System.out.print(" ");
