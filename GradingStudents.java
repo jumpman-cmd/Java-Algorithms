@@ -1,3 +1,30 @@
+/*
+Problem Statement:
+
+Sam is a professor at HackerLand University, and he needs help rounding student grades according to the university's grading policy. Every student receives a grade in the inclusive range from 0 to 100. A grade less than 40 is considered a failing grade.
+
+The university's rounding policy is as follows:
+    If the difference between a student's grade and the next multiple of 5 is less than 3, round the grade up to the next multiple of 5.
+    If the value of the grade is less than 38, no rounding occurs because the grade is a failing grade.
+    Grades that are exactly multiples of 5 are not changed.
+
+Task:
+Write a function gradingStudents that takes an integer array of grades as input and returns a rounded integer array according to the university's grading policy.
+
+Parameters:
+    grades: A list of integers where each integer represents a student's grade before rounding.
+
+Returns:
+    A list of integers representing the grades after applying the rounding rules.
+
+Constraints:
+    1 <= grades.size() <= 100
+    0 <= grades[i] <= 100 where grades[i] is the grade of the i-th student.
+
+Note:
+   The rounding rule only applies to grades greater than or equal to 38.
+*/
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
