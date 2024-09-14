@@ -1,5 +1,25 @@
 // I am still working on it, it gives me errors when I run it.
 
+/*
+Problem Statement: Grid Challenge
+
+You are given a square grid of characters where each character is a lowercase letter in the range a-z. 
+Your task is to rearrange the elements of each row in alphabetical order and then determine 
+if the columns are also sorted in alphabetical order from top to bottom.
+
+Input
+    grid: A list of n strings, where each string represents a row of the grid, 
+    and n is the number of rows (and columns, since it's a square grid).
+
+Output
+    Return "YES" if after sorting each row alphabetically, the columns are 
+    also sorted alphabetically from top to bottom. Otherwise, return "NO".
+
+Constraints
+    Each string in the grid consists of lowercase letters (a-z).
+    The grid is always a square grid (i.e., it has the same number of rows and columns).
+*/
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
