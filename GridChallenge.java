@@ -44,31 +44,36 @@ class Result
      public static String gridChallenge(List<String> grid) 
      {
          // Write your code here
-         int num = grid.size();
+         int gridN = grid.size();
          
-         for(int i = 0; i < num; i++)
+         for(int i = 0; i < gridN; i++)
          {
              char[] gridArrays = grid.get(i).toCharArray();
              Arrays.sort(gridArrays);
              grid.set(i, new String(gridArrays));
          }
          
-         for(int j = 0; j < num; j++) // j = columns
+         for(int j = 0; j < grid.get(0).length(); j++) // j = columns
          {
-             for(int k = 1; k < num; k++) // k = rows
+             for(int k = 1; k < gridN; k++) // k = rows
              {
                  if(grid.get(k).charAt(j) < grid.get(k - 1).charAt(j))
                  {
                      return "NO";
                  }
+                 
+                 /* else
+                 {
+                     return "YES";
+                 }*/
              }
-        }
-        
-        return "YES";
-    }
+         }
+         
+         return "YES";
+     }
 }
 
-public class GridChallenge 
+public class Solution 
 {
     public static void main(String[] args) throws IOException 
     {
