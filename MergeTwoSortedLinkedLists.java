@@ -1,3 +1,18 @@
+/*
+You are given two sorted linked lists. Your task is to merge these two lists into a single sorted linked list. The result should also be a sorted list. 
+You can assume that both input lists are already sorted in ascending order.
+
+Write a function mergeLists(head1, head2) that merges these two linked lists.
+    Input: Two linked lists represented by their head nodes.
+    Output: A reference to the head of the new merged and sorted linked list.
+
+Example:
+    List 1: 1 → 3 → 5
+    List 2: 2 → 4 → 6
+
+Output: 1 → 2 → 3 → 4 → 5 → 6
+*/
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
