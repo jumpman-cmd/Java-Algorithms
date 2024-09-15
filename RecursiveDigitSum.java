@@ -1,3 +1,21 @@
+/*
+Super Digit Problem
+Super Digit of a number (int) is defined using the following rules:
+    Given an integer, we need to find its super digit.
+    If the number has only one digit, then its super digit is the number itself.
+    Otherwise, the super digit is the super digit of the sum of the digits of the number.
+
+Example:
+For the number 9875:
+    The sum of the digits of 9875 is 9 + 8 + 7 + 5 = 29.
+    The sum of the digits of 29 is 2 + 9 = 11.
+    The sum of the digits of 11 is 1 + 1 = 2.
+    Since 2 has only one digit, it is the super digit.
+
+Additional Case with Repetition:
+Given a number n and an integer k, we create a new number by concatenating n k times. We then calculate the super digit of this large number.
+*/
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
