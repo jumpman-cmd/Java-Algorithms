@@ -1,3 +1,21 @@
+/*
+Problem Statement: Balanced Brackets
+
+WE're given a string consisting of opening and closing brackets: {}, [], and (). A string of brackets is considered balanced if:
+    Every opening bracket has a corresponding closing bracket of the same type.
+    Brackets are closed in the correct order.
+
+We have to write a function that takes a string s of brackets and determines whether it is balanced. If the string is balanced, return "YES". 
+Otherwise, return "NO".
+
+Input:
+    A single string s containing only the characters {, }, [, ], (, and ).
+
+Output:
+    Return "YES" if the string is balanced.
+    Return "NO" if the string is not balanced.
+*/
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
