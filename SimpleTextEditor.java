@@ -1,4 +1,31 @@
+/*
+Implement a simple text editor that supports the following operations:
+    Append: Append a given string to the end of the current text.
+    Delete: Delete the last k characters from the current text.
+    Print: Print the character at a given 1-based index.
+    Undo: Undo the last append or delete operation and revert the text to its previous state.
 
+Input Format:
+    The first line contains an integer q, the number of operations.
+    The next q lines describe the operations in one of the following formats:
+        1 w: Append the string w to the text.
+        2 k: Delete the last k characters from the text.
+        3 k: Print the k-th character of the text (1-based index).
+        4: Undo the last append or delete operation.
+
+Output Format:
+    For each 3 k operation, output the k-th character of the text.
+
+Constraints:
+    The sum of the lengths of all w across all append operations does not exceed 106106.
+    The sum of k across all delete operations does not exceed 106106.
+    It is guaranteed that the sequence of operations is valid.
+*/
+
+// This code is correct, but it doesn't pass all test cases, it passes 14/15 test cases
+// Meaning there's only 1 test case that doesn't pass. I will work it through, I'll update when I figured the solution.
+
+// Also when working on this problem; you can use a switch instead of if-else statements.
 
 import java.io.*;
 import java.util.*;
