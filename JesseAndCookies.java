@@ -1,3 +1,11 @@
+/*
+You are given a list of cookies with varying sweetness levels. The goal is to make all cookies have a sweetness greater than or equal to a given value kk. 
+To do this, you can repeatedly mix the two least sweet cookies, creating a new cookie with sweetness equal to:
+-> new sweetness=(1st least sweet cookie)+2×(2nd least sweet cookie)
+
+Return the minimum number of mix operations required to achieve this, or return -1 if it's impossible.
+*/
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
