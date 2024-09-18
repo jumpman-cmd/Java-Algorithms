@@ -1,3 +1,11 @@
+/*
+You are given an infinite number of lego blocks of sizes: 1×11×1, 1×21×2, 1×31×3, and 1×41×4. 
+You need to build a wall of height nn and width mm using these blocks.
+The wall must be solid, meaning it should not have any vertical splits across all rows.
+
+Your task is to determine how many valid ways there are to build such a wall, modulo 10^9 +7.
+*/
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
