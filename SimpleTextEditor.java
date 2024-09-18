@@ -76,3 +76,62 @@ public class Solution
         scan.close();
     }
 }
+
+// Using a switch statement
+// The switch passes 13/15 test cases. Meaning two cases don't successfuly pass this code.
+
+import java.io.*;
+import java.util.*;
+
+public class Solution 
+{
+    public static void main(String[] args) 
+    {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scan = new Scanner(System.in);
+        int q = scan.nextInt();
+        StringBuilder s = new StringBuilder();
+        Stack<String> addText = new Stack<>();
+        
+        for(int i = 0; i < q; i++)
+        {
+            int typeOfOperation = scan.nextInt();
+            switch(typeOfOperation)
+            {
+                case 1:
+                {
+                    addText.push(s.toString());
+                    String w = scan.next();
+                    s.append(w);
+                    break;
+                }   
+                
+                case 2:
+                {
+                    addText.push(s.toString());
+                    int k = scan.nextInt();
+                    s.delete(s.length() - k, s.length());
+                    break;
+                }
+                
+                case 3:
+                {
+                    int operationIndex = scan.nextInt();
+                    System.out.println(s.charAt(operationIndex - 1));
+                    break;
+                }
+                
+                case 4:
+                {
+                    if(!addText.isEmpty())
+                    {
+                        s = new StringBuilder(addText.pop());
+                        break;
+                    }
+                }
+            }
+        }
+        
+        scan.close();
+    }
+}
