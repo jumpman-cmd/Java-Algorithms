@@ -25,7 +25,7 @@ class Node {
     }
 }
 
-class PreOrderTraversal {
+class Solution {
 
 /* you only have to complete the function given below.  
 Node is defined as  
@@ -43,13 +43,16 @@ class Node {
         if(root == null)
         {
             return;
-            // break;
+	    // break;
         }
         
-        System.out.print(root.data + " ");
-        
-        preOrder(root.left);
-        preOrder(root.right);
+        else
+        {
+            System.out.print(root.data + " ");
+            
+            preOrder(root.left);
+            preOrder(root.right);
+        }
     }
 
 	public static Node insert(Node root, int data) {
