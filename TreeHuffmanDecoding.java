@@ -1,3 +1,22 @@
+/*
+Huffman Coding Decoder
+
+You are tasked with implementing a decoder for Huffman coding. Huffman coding is a lossless data compression algorithm 
+that assigns variable-length codes to input characters based on their frequencies. More frequent characters are assigned shorter codes, 
+while less frequent characters receive longer codes. Your goal is to decode a given binary-encoded string using a provided Huffman tree.
+
+Input
+    A string s representing the Huffman-encoded binary string (composed of '0's and '1's).
+    A reference to the root node of a Huffman tree that has been constructed based on character frequencies.
+
+Output
+    A single line containing the decoded string.
+
+Constraints
+    The input string s will only contain characters '0' and '1'.
+    The Huffman tree will be valid and contain characters in its leaf nodes.
+*/
+
 import java.util.*;
  
 abstract class Node implements Comparable<Node> {
