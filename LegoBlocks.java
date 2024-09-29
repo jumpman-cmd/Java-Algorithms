@@ -59,7 +59,7 @@ class Result
          
          for(int i = 1; i <= m; i++)
          {
-             totalLegoWays[i] = rowsPow(legoBlocks[i], n, MOD)/* % MOD*/;
+             totalLegoWays[i] = rowsPow(legoBlocks[i], n, MOD);
          }
          
          long[] validWays = new long[m + 1];
