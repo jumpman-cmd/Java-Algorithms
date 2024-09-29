@@ -63,31 +63,31 @@ class Decoding {
     
 */ 
 
-	void decode(String s, Node root) 
-	{
-        int n = s.length();
-        Node currentNode = root;
-        StringBuilder decodedHuffString = new StringBuilder();
+void decode(String s, Node root)
+{
+    int n = s.length();
+    Node currentNode = root;
+    StringBuilder decodedHuffString = new StringBuilder();
+    
+    for(int i = 0; i < n; i++)
+    {
+        currentNode = s.charAt(i) == '0'? currentNode.left : currentNode.right;
         
-        for(int i = 0; i < n; i++)
+        if(currentNode.left == null && currentNode.right == null)
         {
-            currentNode = (s.charAt(i) == '0')? currentNode.left : currentNode.right;
-            
-            if(currentNode.left == null && currentNode.right == null)
-            {
-                decodedHuffString = decodedHuffString.append(currentNode.data);
-                currentNode = root;
-            }
+            decodedHuffString = decodedHuffString.append(currentNode.data);
+            currentNode = root;
         }
-        
-        System.out.println(decodedHuffString.toString());
     }
+    
+    System.out.println(decodedHuffString.toString());
+}
 
 
 }
 
  
-public class TreeHuffmanDecoding {
+public class Solution {
   
     // input is an array of frequencies, indexed by character code
     public static Node buildTree(int[] charFreqs) {
