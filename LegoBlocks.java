@@ -56,6 +56,7 @@ class Result
          }
          
          long[] totalLegoWays = new long[m + 1];
+         
          for(int i = 1; i <= m; i++)
          {
              totalLegoWays[i] = rowsPow(legoBlocks[i], n, MOD)/* % MOD*/;
