@@ -64,7 +64,7 @@ class Decoding {
 */ 
 
 	void decode(String s, Node root) 
-    {
+	{
         int n = s.length();
         Node currentNode = root;
         StringBuilder decodedHuffString = new StringBuilder();
