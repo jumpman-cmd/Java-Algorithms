@@ -14,12 +14,22 @@ Output
 */
 
 import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
 import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
 
-class BranchNode 
+
+class BranchNode
 {
     Map<Character, BranchNode> next = new HashMap<>();
-    boolean isEndOfWord = false;
+    boolean isEndofWord = false;    
 }
 
 class Result 
@@ -30,45 +40,46 @@ class Result
      * The function accepts STRING_ARRAY words as parameter.
      */
      
-     public static void noPrefix(List<String> words) 
+     public static void noPrefix(List<String> words)
      {
+         // Write your code here
          BranchNode root = new BranchNode();
          
-         for (String word : words) 
+         for(String word : words)
          {
-             BranchNode curNode = root;
+             BranchNode currentNode = root;
              boolean isBadSet = false;
              int n = word.length();
              
-             for (int i = 0; i < n; i++) 
+             for(int i = 0; i < n; i++)
              {
                  char ch = word.charAt(i);
                  
-                 if(curNode.isEndOfWord) 
+                 if(currentNode.isEndofWord)
                  {
                      System.out.println("BAD SET");
                      System.out.println(word);
                      return;
                  }
                  
-                 curNode = curNode.next.computeIfAbsent(ch, k -> new BranchNode());
+                 currentNode = currentNode.next.computeIfAbsent(ch, k -> new BranchNode());
              }
              
-             if(!curNode.next.isEmpty() || curNode.isEndOfWord)
+             if(!currentNode.next.isEmpty() || currentNode.isEndofWord)
              {
                  System.out.println("BAD SET");
                  System.out.println(word);
                  return;
              }
              
-             curNode.isEndOfWord = true;
+             currentNode.isEndofWord = true;
          }
-         
+        
          System.out.println("GOOD SET");
-    }
+     }
 }
 
-public class NoPrefixSet 
+public class Solution 
 {
     public static void main(String[] args) throws IOException 
     {
@@ -76,11 +87,19 @@ public class NoPrefixSet
 
         int n = Integer.parseInt(bufferedReader.readLine().trim());
 
-        List<String> words = new ArrayList<>();
-        for (int i = 0; i < n; i++) 
+        List<String> words = IntStream.range(0, n).mapToObj(i -> 
         {
-            words.add(bufferedReader.readLine());
-        }
+            try 
+            {
+                return bufferedReader.readLine();
+            } 
+            
+            catch (IOException ex) 
+            {
+                throw new RuntimeException(ex);
+            }
+        })
+            .collect(toList());
 
         Result.noPrefix(words);
 
