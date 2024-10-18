@@ -2,23 +2,26 @@ class Solution
 {
     public int climbStairs(int n) 
     {
-        int first = 1, second = 2;
-
         if (n <= 2)
         {
             return n;
-        }    
+        }
 
         else
         {
+            int first = 1;
+            int second = 2;
+
             for (int i = 3; i <= n; i++)
             {
                 int third = first + second;
-                first = third;
-                second = first;
+                first = second;
+                second = third;
             }
+
+            n = second;
         }
 
-        return second;
+        return n;
     }
 }
