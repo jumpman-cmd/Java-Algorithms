@@ -2,57 +2,57 @@ class LRUCache
 {
     class Node
     {
-        int key, value;
         Node next, prev;
-        Node (int k, int v) { key = k; value = v; }
+        int key, value;
+        Node (int k, int v) { key = v; value = v; }
     }
 
     private HashMap<Integer, Node> map;
-    private Node head, tail;
+    private  Node head, tail;
     private int capacity;
 
     public LRUCache(int capacity) 
-    {
+    {        
         this.capacity = capacity;
         map = new HashMap<>();
         head = new Node(0, 0);
         tail = new Node(0, 0);
+        tail.prev = head;
         head.next = tail;
-        tail.prev = head;    
     }
     
     public int get(int key) 
     {
         if (!map.containsKey(key)) return -1;
         Node node = map.get(key);
-        remove(node);
-        InsertToFront(node);
-        return node.value;    
+        deleteNode(node);
+        putInFront(node);
+        return node.value;
     }
     
     public void put(int key, int value) 
     {
         if (map.containsKey(key))
         {
-            remove(map.get(key));
+            deleteNode(map.get(key));
         }
 
         else if (map.size() == capacity)
         {
-            remove(tail.prev);
+            deleteNode(tail.prev);
         }
 
-        InsertToFront(new Node(key, value));
+        putInFront(new Node(key, value));
     }
 
-    private void remove(Node node)
+    public void deleteNode(Node node)
     {
         map.remove(node.key);
         node.prev.next = node.next;
         node.next.prev = node.prev;
     }
 
-    private void InsertToFront(Node node)
+    public void putInFront(Node node)
     {
         map.put(node.key, node);
         node.next = head.next;
