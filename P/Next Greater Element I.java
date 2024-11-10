@@ -2,31 +2,33 @@ class Solution
 {
     public int[] nextGreaterElement(int[] nums1, int[] nums2)
     {
-        int[] count = new int[nums1.length];
+        int n = nums1.length;
+        int m = nums2.length;
+        int[] ans = new int[n];
 
-        for (int i = 0; i < nums1.length; i++)
+        for (int i = 0; i < n; i++)
         {
-            int cur = nums1[i];
-            int nextGreater = -1;
+            int count = nums1[i];
+            int nextGE = -1; // next greater element
 
             int j = 0;
-            while (j < nums2.length && nums2[j] != cur)
+            while (j < m && nums2[j] != count)
             {
                 j++;
             }
 
-            for (int k = j + 1; k < nums2.length; k++)
+            for (int k = j + 1; k < m; k++)
             {
-                if (nums2[k] > cur)
+                if (nums2[k] > count)
                 {
-                    nextGreater = nums2[k];
+                    nextGE = nums2[k];
                     break;
                 }
             }
 
-            count[i] = nextGreater;
+            ans[i] = nextGE;
         }
 
-        return count;
+        return ans;
     }
 }
