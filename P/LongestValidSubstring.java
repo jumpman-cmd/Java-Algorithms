@@ -11,7 +11,7 @@ class Solution
 
         int n = word.length();
         int left = n - 1, right = left;
-        // int righ = left;
+        // int right = left;
         int maxLength = 0;
 
         while (left > - 1)
