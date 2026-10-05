@@ -36,3 +36,6 @@ class Solution
         return current;
     }
 }
+
+// Time Complexity: O(2^n)
+// Space Complexity: o(M)
